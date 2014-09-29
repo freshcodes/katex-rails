@@ -23,6 +23,12 @@ To include the javascript, require the `katex/katex` in your JavaScript. An exam
 
 For information on how to use KaTeX please see: https://github.com/khan/katex
 
+### Precompiling
+
+All the fonts are automatically added to the precompile list. If you'd like to precompile katex.js and katex.css for separate inclusion, then just add the following to your application config.
+
+    config.assets.precompile += ['katex/katex.css', 'katex/katex.js']
+
 ## License
 
 KaTeX Rails is licensed under the MIT (LICENSE.txt) license.
